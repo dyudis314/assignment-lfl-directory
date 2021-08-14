@@ -1,4 +1,4 @@
-const employeeList = [
+export const employeeList = [
   {
     name: 'Jan',
     officeNum: 1,

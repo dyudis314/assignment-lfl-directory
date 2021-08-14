@@ -1,1 +1,96 @@
 /* Your work here */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  background-image: linear-gradient(120deg, #f6d365, #f07958);
+  color: rgb(48, 48, 48);
+  font-family: 'Roboto', sans-serif;
+  min-height: 400vh;
+}
+
+/* Tabs */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap;
+  flex-direction: column;
+  width: 250px;
+  position: absolute;
+  right: 0px;
+  top: 2.5px;
+}
+.tabs label {
+	order: 1;
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: #e08d76;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  z-index: 999;
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  z-index: 99;
+  position: relative;
+  right: 500px;
+  bottom: 250px;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: #f6d365;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+.employees-list {
+  list-style-type: none;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.employee {
+  border:#e08d76 1px solid;
+  padding: 1.5rem;
+  width: 20rem;
+  list-style-type: none;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  margin-top: 10px;
+  font-size: 2rem;
+  border: 1px rgba(155, 155, 155, 0.644) solid;
+  background: white;
+}
+
+form button {
+  color: #e08d76;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+form button:hover {
+  background: #e08d76;
+  color: white;
+}
+
+.match {
+margin-top: 40px;
+border:#e08d76 1px solid;
+padding: 1.5rem;
+width: 20rem;
+}

@@ -36,3 +36,20 @@ Feel free to reach out to with any questions or for clarification.
 - MVC JS architecture
 
 ## Dev notes
+1) Determine objective: create a mini CRUD application (Create, Read, Update, Delete) using Vanilla JS, HTML, CSS
+2) Implement basic styling. Create a "nav" menu using HTML/CSS flex. I styled radio buttons to create a "tab effect" when the user clicks.
+3) Implement functionality (5 Parts)
+-VIEW module: 
+  -Export and log employeeList.js data to app.js
+  -Map out employee data using forEach
+-ADD module:
+  -Load data from employeeList array
+  -On click, handle input values and insert them into HTML, render onto DOM
+-VERIFY module:
+  -Using forEach, create a click event that filters through employeeList data to see if there's a name match. Render to DOM.
+-UPDATE module:
+  -I ran out of time (unfortunately). I wrote code that exemplified my approach. If name input value matches the data, then the object updates.
+-DELETE module:
+  -I ran out of time for this module. I wrote out the code: If criteria DO NOT match, filter (or keep) all items in the state / UI.
+
+  ** Thanks for the opportunity to show off my skillset! I made sure to implement my artistic flair :) I look forward to hearing back **

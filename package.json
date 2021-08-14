@@ -1,0 +1,26 @@
+{
+  "name": "assignment-lfl-directory",
+  "version": "1.0.0",
+  "description": "CRUD APP LFL",
+  "main": "src",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dyudis314/assignment-lfl-directory.git"
+  },
+  "author": "Dylan Yudis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dyudis314/assignment-lfl-directory/issues"
+  },
+  "homepage": "https://github.com/dyudis314/assignment-lfl-directory#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}

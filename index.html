@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>LFL Employee Directory</title>
+    <link rel="stylesheet" href="/style.css">
   </head>
-
   <body>
-    <script src="dom.js"></script>
-    <script src="employee-list.js"></script>
-    <script src="app.js"></script>
+    <div class="tabs">
+      <input type="radio" name="tabs" id="tabone" class="tabone">
+      <label for="tabone">View</label>
+      <div class="tab tab1">
+        <h1>View All</h1>
+      </div>
+      <input type="radio" name="tabs" id="tabtwo" class="tabtwo">
+      <label for="tabtwo">Add</label>
+      <div class="tab tab2">
+        <form>
+          <input placeholder="Name" class="name-input"></input>
+          <input placeholder="Office Number" class="office-num-input"></input>
+          <input placeholder="Phone Number" class="phone-number-input"></input><br>
+          <button class="add-button">Add</button>
+        </form>
+      </div>   
+      <input type="radio" name="tabs" id="tabthree" class="tabthree">
+      <label for="tabthree">Verify</label>
+      <div class="tab tab3">
+        <form>
+          <input placeholder="Verify name here...." class="verify-name-input"></input>
+          <button class="verify-button">Verify</button>
+        </form>
+      </div>
+
+      <input type="radio" name="tabs" id="tabfour" class="tabfour">
+      <label for="tabfour">Update</label>
+      <div class="tab tab4">
+        <form>
+          <input placeholder="Name" class="update-name-input"></input>
+          <input placeholder="Office Number" class="office-num-input"></input>
+          <input placeholder="Phone Number" class="phone-num-input"></input>
+          <button class="update-button">Update</button>
+        </form>
+      </div>
+      <input type="radio" name="tabs" id="tabfive" class="tabfive">
+      <label for="tabfive">Delete</label>
+      <div class="tab tab5">
+        <form>
+          <input placeholder="Delete..." class="delete-name-input"></input>
+          <button class="delete-button">Delete</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="dom.js"></script>
+    <script type="module" src="employee-list.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
